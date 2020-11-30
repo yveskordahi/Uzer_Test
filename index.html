@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/6a887ac9fa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <title>Uzer Test</title>
+</head>
+<body>
+    
+    <main class="main">
+
+        <div class="container">
+            <div class="title">
+                <h1>Bienvenue sur votre espace Client</h1>
+                <h3>Renseignez une valeur pour chaque champs</h3>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label class="Value" for="xValue">Valeur X</label>
+                    <input type="number" placeholder="0" id="xValue" onchange="getChartX()"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label class="Value" for="yValue">Valeur Y</label>
+                    <input type="number" placeholder="0" id="yValue" onchange="getChartY()"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button onclick="refreshDiv()">Générer</button>
+            </form>
+        </div>
+
+        <div id="container_chart" class="container_chart">
+            <canvas id="myChart"></canvas>
+        </div>  
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="chart.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

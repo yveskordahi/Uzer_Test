@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container_chart {
+    width: 54%;
+    display: flex;
+    align-items: center;
+}
+
+/* .container_chart {
+    display: none;
+} */
+
+@media screen and (max-width: 1200px) {
+    .container_chart {
+        width: 100%;
+    }
+}
