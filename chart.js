@@ -17,7 +17,7 @@ function getChartY(DataY) {
 
 function refreshDiv()
 { 
-    $( "#container_chart" ).load(window.location.href + " #container_chart" );
+    $( "#container_chart" ).load( "https://uzer-test.netlify.app/ #container_chart" );
 }
 
 var ctx = document.querySelector('#myChart').getContext('2d');
