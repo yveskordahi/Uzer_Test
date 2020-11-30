@@ -20,19 +20,19 @@
             <form id="form" class="form">
                 <div class="form-control">
                     <label class="Value" for="xValue">Valeur X</label>
-                    <input type="number" placeholder="0" id="xValue" onchange="getChartX()"/>
+                    <input type="number" placeholder="0" id="xValue"/>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
                 <div class="form-control">
                     <label class="Value" for="yValue">Valeur Y</label>
-                    <input type="number" placeholder="0" id="yValue" onchange="getChartY()"/>
+                    <input type="number" placeholder="0" id="yValue"/>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-                <button onclick="refreshDiv()">Générer</button>
+                <button id="myButton">Générer</button>
             </form>
         </div>
 
@@ -40,7 +40,7 @@
             <canvas id="myChart"></canvas>
         </div>  
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="chart.js"></script>
     <script src="form.js"></script>
 </body>
